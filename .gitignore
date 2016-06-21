@@ -1,0 +1,17 @@
+# Created by https://www.gitignore.io/api/emacs
+
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ignore python byte code files
+*.pyc
+
+helper/
