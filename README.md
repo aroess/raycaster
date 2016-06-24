@@ -1,10 +1,16 @@
 # Python Raycaster
+### Dependencies ###
+* Python 2.7.x
+* pygame
+
 ### Features ###
 * Wall textures
 * Animated sprites (enemies, weapon)
-* Ctypes interface to engine
+* Ctypes interface to raycast engine
 * Background music and sound effects
 * Basic enemy path finding
+* Head bopping
+* Weapon sway
 
 ```
 $ python Raycaster.py -h
