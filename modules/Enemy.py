@@ -150,7 +150,7 @@ class Enemy(object):
             self.frame = 0
 
         count = 0
-        for w in xrange(int(self.screenW)-1):
+        for w in range(int(self.screenW)-1):
             index = int(self.screenLeft/screen.scale + w/screen.scale)
             try:
                 if screen.distList[index] < self.screenDist:
@@ -257,7 +257,7 @@ class Enemy(object):
             x, y = point
             path = []
 
-            for _ in xrange(pathTableCopy[y][x]):
+            for _ in range(pathTableCopy[y][x]):
                 dist = pathTableCopy[y][x]
                 ns = neighbors(x, y)
                 shuffle(ns)
@@ -275,11 +275,11 @@ class Enemy(object):
         def printTable():
             for row in pathTableCopy:
                 for col in row:
-                    if col == -1: print "xx",
+                    if col == -1: print("xx", end="")
                     else:
-                        if len(str(col)) == 1 : print " "+str(col),
-                        else: print col,
-                print
+                        if len(str(col)) == 1 : print(" "+str(col), end="")
+                        else: print(col, end="")
+                print()
 
         def makeGridPoint(x, y):
             return (int(x) >> 6, int(y) >> 6)

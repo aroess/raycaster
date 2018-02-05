@@ -32,7 +32,7 @@ class Weapon(pygame.sprite.Sprite):
            ,int(self.spriteH * self.scale)))
         width  = int(self.spriteW * self.scale)
         height = int(self.spriteH * self.scale)
-        for i in xrange(self.uniqueFrames):
+        for i in range(self.uniqueFrames):
             self.imgFrames.append((width * i, 0, width, height))
 
         self.animation = False

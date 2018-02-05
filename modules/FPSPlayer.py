@@ -85,7 +85,7 @@ class FPSPlayer(object):
         self.moveSpeed = 0.4 * clock.get_time()
         # Probleme  wenn self.dir float wird?
         self.turnSpeed = 0.1 * clock.get_time()
-        fps = int(clock.get_fps()) / 4
+        fps = int(clock.get_fps() / 4)
         if list(self.lastInput)[-fps:].count(0) == fps or \
            list(self.lastInput)[-fps:].count(1) == fps:
             if self.acc < 3: self.acc += 0.1

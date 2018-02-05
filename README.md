@@ -1,6 +1,6 @@
 # Python Raycaster
 ### Dependencies ###
-* Python 2.7.x
+* Python 3.4.x
 * pygame
 
 ### Features ###

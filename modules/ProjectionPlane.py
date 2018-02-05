@@ -138,7 +138,7 @@ class ProjectionPlane(object):
         # background color = sky color
         self.pyscreen.fill((41 ,36, 33))
 
-        for i in xrange(0,320):
+        for i in range(0,320):
             currentAngle = startFOV - i * self.rayAngleStep
             if currentAngle < 0:
                 currentAngle = currentAngle + 360

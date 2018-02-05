@@ -70,15 +70,15 @@ class ProjectionPlane(object):
             self.tableW, c_float(player.x), c_float(player.y), \
             c_int(int(player.dir)))
 
-        self.distList = [array[i] for i in xrange(0, 320*4, 4)]
-        off   = [int(array[i]) for i in xrange(1, 320*4+1, 4)]
-        tex   = [int(array[i]) for i in xrange(2, 320*4+2, 4)]
-        alpha = [int(array[i]) for i in xrange(3, 320*4+3, 4)]
+        self.distList = [array[i] for i in range(0, 320*4, 4)]
+        off   = [int(array[i]) for i in range(1, 320*4+1, 4)]
+        tex   = [int(array[i]) for i in range(2, 320*4+2, 4)]
+        alpha = [int(array[i]) for i in range(3, 320*4+3, 4)]
 
         # background color = sky color
         self.pyscreen.fill((41 ,36, 33))
 
-        for i in xrange(0,320):
+        for i in range(0,320):
 
             height   = self.c / self.distList[i]
             startPos = 100 * self.scale - height / 2  + (32 - player.height)
